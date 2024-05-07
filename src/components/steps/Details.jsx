@@ -28,6 +28,7 @@ const Details = ({ handleNext }) => {
         {...getCardNumberProps({ onChange: handleChangeCardNumber })}
         value={cardNumber}
         required
+        maxLength={19}
       />
       <input
         {...getExpiryDateProps({ onChange: handleChangeExpiryDate })}
@@ -37,6 +38,7 @@ const Details = ({ handleNext }) => {
       <input
         {...getCVCProps({ onChange: handleChangeCVC })}
         value={cvc}
+        maxLength="3"
         required
       />
       {meta.isTouched && meta.error && <span>Error: {meta.error}</span>}

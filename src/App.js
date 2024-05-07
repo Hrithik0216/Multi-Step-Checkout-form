@@ -14,7 +14,7 @@ function App() {
     address: ""
   });
   const [finalData, setFinalData] = useState([]);
-  const steps = ["Account Information", "Personal Details", "Complete"];
+  const steps = ["Account Information", "Card Details", "Complete"];
 
   const displayStep = (step) => {
     switch (step) {
