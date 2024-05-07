@@ -24,6 +24,9 @@ const Details = ({ handleNext }) => {
 
   return (
     <div>
+      <div className="flex justify-center mb-10 items-center  bg-white-100">
+      <h1 className="text-3xl text-green-500 text-center">Please Enter your card details</h1>
+    </div>
       <input
         {...getCardNumberProps({ onChange: handleChangeCardNumber })}
         value={cardNumber}
